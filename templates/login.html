@@ -1,0 +1,41 @@
+<template name="login">
+<div style="
+background: url(/background.png) no-repeat center center fixed;;
+font-family: sans-serif;
+
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+  
+<span class='title'><h1><b>Scoop</b></h1></span>
+<span class='subtitle'><h3><b>Ask-Answer</b></h3></span>
+<br>
+
+<span class='registerT'>
+
+  <div class="login-header">
+    <h1><b>Login</b></h1>
+    <br>
+  </div>
+  <h4>
+  <div class="login-form">
+    <form class="login">
+        <p>Username: <input type="text" id='usernameL' placeholder='Username' required></p>
+        <br>
+
+        
+        <p>Password: <input type="password"  id='passwordL' placeholder='password'  required></p>
+
+        <p><button onclick={{myFunction2}} type="submit" class="btn btn-primary">Let me in</button></p>
+         <br>
+
+        <p>Don't have an account</p>
+        <br>
+        <h3><a href='{{pathFor route="home"}}'>Register</a></h3>
+    </form>
+   </div>
+  </h4>
+</span>
+</div>
+</template>

@@ -1,0 +1,75 @@
+#likeColor {
+	background-color:lightblue;
+}
+#likeAnswerColor {
+	background-color:lightblue;
+}
+
+#followColor {
+	background-color:lightblue;
+}
+.blur   {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+
+#myinput {
+	width:500px;
+	
+}
+#mycomment{
+	width:400px;
+	align:center;
+}
+#profileImage {
+	height:350px;
+	width:350px;
+}
+#websiteTitle {
+	vertical-align: middle;
+	padding-left: 30px;
+	color:red;
+	font-family: 'Pacifico',cursive;
+}
+.logout {
+	text-align:right;
+}
+.title {
+
+	
+	text-align: center;
+
+	padding-left: 70px;
+	color:blue;
+	font-family: sans-serif;
+}
+.subtitle {
+
+	
+	text-align: center;
+
+	padding-left: 70px;
+	color:blue;
+	font-family: sans-serif;
+}
+.registerT {
+	text-align: center;
+	
+}
+input.error{
+    background-color:rgb(255, 231, 231);
+}
+
+#fof{display:block; position:relative; width:960px; height:578px; background:url("/404.png") top left no-repeat; border-bottom:2px solid #000000; line-height:1.6em; text-align:center;}
+#fof .positioned{display:block; position:absolute; top:300px; right:0; width:448px; height:250px;}
+#fof .hgroup{margin-bottom:50px;}
+#fof .hgroup h1{}
+#fof .hgroup h2{}
+#fof img{margin-bottom:25px;}
+#fof p{display:block; margin:0 0 25px 0; padding:0; font-size:16px;}
+#fof #respond input{width:200px; padding:5px; border:1px solid #CCCCCC;}
+#fof #respond #submit{width:auto;}
+

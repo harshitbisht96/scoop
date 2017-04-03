@@ -1,0 +1,15 @@
+<template name='searchresults'>
+<br/>
+{{#if this}}
+<b>Search result </b>
+<br>
+{{#each this}}
+<a href="{{pathFor route='commentPage'}}">{{name}}</a>
+<br/>
+{{/each}}
+{{else}}
+<b>No search result found.Try again.</b>
+{{/if}}
+
+
+</template>

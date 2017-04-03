@@ -1,0 +1,49 @@
+<template name="home">
+
+<span class='title'><h1><b>Scoop</b></h1></span>
+<div style="
+background: url(/background.png) no-repeat center center fixed;;
+font-family: sans-serif;
+
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+
+<span class='subtitle'><h3><b>Ask & Answer</b></h3></span>
+<br>
+{{>registerTemplate}}
+</div>
+</template>
+
+
+
+<template name='registerTemplate'>
+<span class='registerT'>
+
+  <div class="login-header">
+    <h1><b>Register</b></h1>
+    <br>
+  </div>
+  <h4>
+  <div class="login-form">
+    <form id="register">
+        <p>Username: <input type="text"  id='username' placeholder='Username' required></p><p id="demo1"></p>
+        <br>
+        
+        <p>Password: <input type="password" id='password' placeholder='password' required></p><p id="demo2"></p>
+        <p><button type="submit" class="btn btn-primary">Create Account</button></p>
+         <br>
+
+        <p>Already have an account</p>
+        <br>
+        <h3><a href='{{pathFor route="login"}}'>Login</a></h3>
+    </form>
+    
+  </div>
+  </h4>
+
+</span>
+
+</template>
+

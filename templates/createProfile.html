@@ -1,0 +1,31 @@
+<template name='createProfile'>
+<div class='container'>
+<h2><b>Please enter your details here</b></h2>
+<form>
+<ul>
+
+<li>
+What is your name?<br><br>
+<input type='text' value={{name}} id='name' placeholder='Enter your name' required/>
+</li>
+<li>
+What are your hobbies?<br><br>
+<input type='text' id='hobbies' value={{hobbies}} placeholder='Enter your hobbies' required/>
+</li>
+<li>
+Give us a little description about yourself-<br><br>
+<input type='text' id='description' value={{description}} placeholder='Enter description' required/>
+</li>
+
+<li>
+Add your image URL here-<br><br>
+<input type='text' id='src'  value={{src}} placeholder='Enter image URL' required/>
+</li>
+
+</ul>
+<br>
+<br>
+<button class='btn btn-success' id='button'>Save</button>
+</form>
+</div>
+</template>

@@ -1,0 +1,10 @@
+<template name='users'>
+<div class='container'>
+{{#each profile}}
+<div class='col-lg-6'>
+<a href="{{pathFor route='profilePage'}}"><h3>{{name}}</h3>
+<img src='{{src}}' class='img-responsive img-circle pull-left' height='50' width='50'/></a>
+</div>
+{{/each}}
+</div>
+</template>

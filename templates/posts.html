@@ -1,0 +1,53 @@
+
+<template name="posts">
+
+<meta charset="UTF-8" >
+
+{{> addPost}}
+
+    {{#each post}}
+        {{> postItem}}
+
+    {{/each}}
+</template>
+
+
+<template name="postItem" >
+   <p> 
+    <div class='container'>
+    
+    <div class='col-lg-9'>
+    <div class='well'>
+    <h4><img src='{{userImage}}' class='img-responsive img-circle pull-left' height='100' width='100'/> <a href="{{pathFor route='commentPage'}}" >{{name}}</a></h4>
+    <i>Asked by {{postedBy}} on {{formattedDate}}</i>
+    </div>
+    </div>
+    
+    <br>
+    {{likes}}<button class="btn btn-default glyphicon glyphicon-thumbs-up" id={{likeColor}} >Like</button>
+    <a href="{{pathFor route='commentPage'}}" class='btn btn-default glyphicon glyphicon-comment'> {{commentsNo}} Answers</a>
+    {{#if isUser}}
+     <a href="#" class="btn btn-default glyphicon glyphicon-trash" id='delete-post'>Delete</a>
+	{{/if}}
+
+    </div>
+    </p>
+    <hr/>
+</template>
+
+
+<template name='addPost'>
+<div class='container'>
+<div class='row'>
+<div class='col-lg-8'>
+<input type='text' size='50' placeholder='Add question here' name='postName' id ='myinput'>
+<button class="btn btn-success" type="button" id='btn'>Ask</button>
+<br>
+<br>
+<br>
+</div>
+</div>
+</div>
+
+</template>
+

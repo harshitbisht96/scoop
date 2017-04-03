@@ -1,0 +1,56 @@
+
+<template name="commentPage">
+<div class='container'>
+<div class='well'>
+	<h2><b><img src='{{userImage}}' class='img-responsive img-circle pull-left' height='120' width='120'/>{{name}}  <small>{{postedBy}}</small></b></h2>
+	</div>
+	<br>
+	<br>
+	
+	<hr/>
+    {{> comments}}
+</div>
+
+</template>
+
+<template name="comments">
+    <div class='container'>
+    {{> addComment}}
+    
+    {{#each comment}}
+        {{> commentName}}
+    {{/each}}
+    </div>
+</template>
+
+<template name='commentName'>
+<div class='container'>
+<div class='col-lg-8'>
+
+<img src='{{userImage}}' class='img-responsive img-circle pull-left' height='70' width='70'/>
+<span class='answer'>{{comment}} </span>
+<br>
+<b>Answered by <i>{{madeBy}}</i> on {{madeOn}} </b>
+<br>
+{{likes}}<button class='btn btn-default glyphicon glyphicon-thumbs-up' id={{likeAnswerColor}}>Upvote</button>
+<br>
+<br>
+
+<hr/>
+</div>
+</div>
+</template>
+
+<template name='addComment'>
+<div class='container'>
+<div class='well'>
+<input type='text' placeholder='Add your answer here' id ='mycomment'>
+<button class="btn btn-success" type="button" id='btn'>Answer</button>
+</div>
+</div>
+<br>
+<br>
+</template>
+
+
+

@@ -1,0 +1,35 @@
+<template name='profilePage'>
+
+<h2 class='media-heading'> Profile</h2>
+<div class='well'>
+
+<img src='{{src}}' class='img-responsive img-circle pull-left' id='profileImage' height='50' width='50'/>
+Name:{{name}}
+
+<br>
+
+Hobbies:{{hobbies}}
+
+<br>
+
+Description:{{description}}
+
+<br>
+
+<a href='{{pathFor route="followers"}}'>Followers:{{followers}}</a>
+
+<br>
+
+<a href='{{pathFor route="following"}}'>Following:{{following}}</a>
+<br>
+<button id={{followColor}} class='btn btn-default glyphicon glyphicon-eye-open' {{disabled}}>{{followOrfollowing}}</button>
+<br>
+
+</div>
+<br>
+
+
+
+
+<hr/>
+</template>
